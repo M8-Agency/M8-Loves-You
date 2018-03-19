@@ -108,6 +108,12 @@
   --white: #ffffff;
   --light-gray: #f4f4f4;
   --gray: #6e6e6e;
+  --purple: #640088;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -115,7 +121,10 @@ body {
     no-repeat;
   background-size: cover;
   font-family: "ITC Lubalin Graph Std", Georgia, Times, Times New Roman, serif;
-  overflow: hidden;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
 h1,
@@ -137,11 +146,14 @@ h5,
 h6,
 p,
 pre,
-image,
+img,
 input,
 select,
 form,
-table {
+table,
+tr,
+td,
+tbody {
   margin: 0;
   padding: 0;
 }
@@ -156,11 +168,11 @@ main {
   justify-content: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  height: 100vh;
 }
 
 p,
-ul {
+ul,
+img {
   margin-bottom: 1rem;
 }
 
@@ -202,4 +214,43 @@ li {
 .InfoBox a:hover {
   background: var(--white);
   color: var(--black);
+}
+
+.EmailSignatureGenerator {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: flex-start;
+  justify-items: center;
+}
+.EmailSignatureGenerator form {
+}
+.input-holder {
+}
+.input-holder label {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+  font-size: 0.65rem;
+}
+.input-holder input {
+  display: block;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  margin-bottom: 0.5rem;
+  width: 400px;
+}
+.input-holder input.copied {
+  background: var(--purple);
+  color: var(--white);
+  font-weight: bold;
+  transition: all 0.6s;
+}
+
+.SigVisualizer {
+  background: white;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid #e2e2e2;
 }

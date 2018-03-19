@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Tools extends Component {
   render() {
@@ -34,13 +35,7 @@ class Tools extends Component {
 
         <ul className="ToolList">
           <li>
-            <a
-              href="http://m8agency.com/styleguide/#/email"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              M8 Styleguide
-            </a>
+            <Link to="/tools/email-signature">M8 Styleguide</Link>
             <span>E-mail signatures</span>
           </li>
 
