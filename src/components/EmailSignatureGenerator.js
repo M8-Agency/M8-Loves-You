@@ -137,7 +137,7 @@ const Visualizer = ({ name, title, add1, add2, phoneExt, mobile }) => {
             <a href="https://m8agency.com">
               <img
                 alt="M8"
-                src="http://m8website2018-vxhdb1nikcdy49t.stackpathdns.com/static/images/hosted/logo-email-signature.png"
+                src="https://m8website2018-vxhdb1nikcdy49t.stackpathdns.com/static/images/hosted/logo-email-signature.png"
                 width="65"
                 height="45"
               />
