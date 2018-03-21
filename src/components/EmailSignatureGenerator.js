@@ -240,7 +240,8 @@ class EmailSignatureGenerator extends Component {
     const name = target.name;
     const value = target.type === "checkbox" ? target.checked : target.value;
     this.setState({
-      [name]: value
+      [name]: value,
+      error: null
     });
   }
   handleSubmit(e) {
