@@ -133,13 +133,16 @@ const Visualizer = ({ name, title, add1, add2, phoneExt, mobile }) => {
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td rowSpan="4" width="85px">
+          <td rowSpan="5" width="102px">
             <a href="https://m8agency.com">
               <img
                 alt="M8"
-                src="https://m8website2018-vxhdb1nikcdy49t.stackpathdns.com/static/images/hosted/logo-email-signature.png"
-                width="65"
-                height="45"
+                src="https://m8-gsa-vxhdb1nikcdy49t.stackpathdns.com/images/m8-iprospect-logo-email-signature.png"
+                width="91"
+                height="74"
+                style={{
+                  margin: 0
+                }}
               />
             </a>
           </td>
@@ -187,10 +190,11 @@ const Visualizer = ({ name, title, add1, add2, phoneExt, mobile }) => {
             </a>
           </td>
         </tr>
-        <tr />
-        <tr style={{ lineHeight: "25px" }}>
+
+        <tr style={{ lineHeight: "40px" }}>
           <td>&nbsp;</td>
         </tr>
+
         <tr>
           <td colSpan="2">
             <span
@@ -279,14 +283,24 @@ class EmailSignatureGenerator extends Component {
           onSubmit={this.handleSubmit}
           error={this.state.error}
         />
-        <Visualizer
-          name={this.state.name}
-          title={this.state.title}
-          add1={this.state.add1}
-          add2={this.state.add2}
-          phoneExt={this.state.phoneExt}
-          mobile={this.state.mobile}
-        />
+
+        <div
+          style={{
+            padding: "1rem",
+            borderRadius: "13px",
+            background: "white",
+            border: "1px solid #959595"
+          }}
+        >
+          <Visualizer
+            name={this.state.name}
+            title={this.state.title}
+            add1={this.state.add1}
+            add2={this.state.add2}
+            phoneExt={this.state.phoneExt}
+            mobile={this.state.mobile}
+          />
+        </div>
       </div>
     );
   }
