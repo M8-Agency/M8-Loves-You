@@ -147,7 +147,8 @@ const Visualizer = ({ name, title, add1, add2, phoneExt, mobile }) => {
                 wordBreak: "normal",
                 margin: 0,
                 padding: 0,
-                textAlign: "left"
+                textAlign: "left",
+                letterSpacing: "1px"
               }}
             >
               {name}
@@ -181,7 +182,8 @@ const Visualizer = ({ name, title, add1, add2, phoneExt, mobile }) => {
                 wordBreak: "normal",
                 margin: 0,
                 padding: 0,
-                textAlign: "left"
+                textAlign: "left",
+                letterSpacing: "1px"
               }}
             >
               {title}
@@ -276,7 +278,8 @@ const Visualizer = ({ name, title, add1, add2, phoneExt, mobile }) => {
                         fontSize: "12px",
                         margin: 0,
                         padding: 0,
-                        textAlign: "left"
+                        textAlign: "left",
+                        letterSpacing: "1px"
                       }}
                     >
                       {add1}
@@ -290,7 +293,8 @@ const Visualizer = ({ name, title, add1, add2, phoneExt, mobile }) => {
                       style={{
                         fontFamily: `"Century Gothic", CenturyGothic, AppleGothic, sans-serif`,
                         color: "#000000",
-                        fontSize: "12px"
+                        fontSize: "12px",
+                        letterSpacing: "1px"
                       }}
                     >
                       o: 786-623-5500 {extension}
@@ -306,7 +310,8 @@ const Visualizer = ({ name, title, add1, add2, phoneExt, mobile }) => {
                         fontSize: "12px",
                         textDecoration: "none",
                         margin: 0,
-                        padding: 0
+                        padding: 0,
+                        letterSpacing: "1px"
                       }}
                       href="https://m8agency.com"
                       target="_blank"
