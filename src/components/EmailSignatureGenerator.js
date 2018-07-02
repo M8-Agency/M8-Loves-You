@@ -83,7 +83,16 @@ const Form = ({
       </div>
 
       <div className="input-holder">
-        <input className={CTAstatus} type="submit" value={submitCTA} />
+        <input
+          className={CTAstatus}
+          type="submit"
+          value={submitCTA}
+          style={{
+            backgroundColor: "#1D7DE4",
+            color: "white",
+            border: "1px solid black"
+          }}
+        />
       </div>
     </form>
   );

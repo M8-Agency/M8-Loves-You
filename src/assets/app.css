@@ -242,9 +242,8 @@ li {
   width: 400px;
 }
 .input-holder input.copied {
-  background: var(--purple);
+  background: var(--purple) !important;
   color: var(--white);
-  font-weight: bold;
   transition: all 0.6s;
 }
 
