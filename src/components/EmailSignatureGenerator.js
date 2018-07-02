@@ -226,15 +226,17 @@ class EmailSignatureGenerator extends Component {
   constructor() {
     super();
 
-    this.state = {
-      name: "Jane Doe",
-      title: "Director of Fun",
-      add1: "2200 Biscayne Blvd, 2nd Floor",
-      add2: "Miami, FL 33137",
-      phoneExt: "",
-      mobile: "",
+    const initialState = {
+      name: localStorage["name"] || "Jane Doe",
+      title: localStorage["title"] || "Director of Fun",
+      add1: localStorage["add1"] || "2200 Biscayne Blvd, 2nd Floor",
+      add2: localStorage["add2"] || "Miami, FL 33137",
+      phoneExt: localStorage["phoneExt"] || "",
+      mobile: localStorage["mobile"] || "",
       error: null
     };
+
+    this.state = initialState;
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -243,6 +245,8 @@ class EmailSignatureGenerator extends Component {
     const target = e.target;
     const name = target.name;
     const value = target.type === "checkbox" ? target.checked : target.value;
+    localStorage[name] = value;
+
     this.setState({
       [name]: value,
       error: null
