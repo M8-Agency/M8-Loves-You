@@ -90,131 +90,264 @@ const Form = ({
 };
 
 const Visualizer = ({ name, title, add1, add2, phoneExt, mobile }) => {
-  const address = add2 !== "" ? `${add1}, ${add2}` : add1;
   const extension = phoneExt !== "" ? `ext. ${phoneExt}` : "";
   const mobilePhone = mobile !== "" ? `  |  m: ${mobile}` : "";
   return (
     <table
       id="m8-email-signature"
       className="SigVisualizer"
-      width="500"
+      width="600"
       cellSpacing="0"
       cellPadding="0"
       border="0"
+      align="left"
+      style={{ border: "none", padding: "0px", margin: "0px", width: "600px" }}
     >
-      <tbody>
-        <tr>
-          <td colSpan="2">
-            <span
+      <tbody
+        style={{
+          overflow: "hidden",
+          wordBreak: "normal",
+          verticalAlign: "top",
+          margin: 0,
+          padding: 0
+        }}
+      >
+        <tr
+          style={{
+            overflow: "hidden",
+            wordBreak: "normal",
+            verticalAlign: "top",
+            margin: 0,
+            padding: 0
+          }}
+        >
+          <td
+            style={{
+              overflow: "hidden",
+              wordBreak: "normal",
+              verticalAlign: "top",
+              margin: 0,
+              padding: 0
+            }}
+          >
+            <strong
               style={{
-                fontFamily: "Helvetica,sans-serif",
+                fontFamily: `"Century Gothic", CenturyGothic, AppleGothic, sans-serif`,
                 color: "#000000",
-                fontSize: "16px"
+                fontSize: "16px",
+                wordBreak: "normal",
+                margin: 0,
+                padding: 0,
+                textAlign: "left"
               }}
             >
               {name}
-            </span>
+            </strong>
           </td>
         </tr>
-        <tr>
-          <td colSpan="2">
+
+        <tr
+          style={{
+            overflow: "hidden",
+            wordBreak: "normal",
+            verticalAlign: "top",
+            margin: 0,
+            padding: 0
+          }}
+        >
+          <td
+            style={{
+              overflow: "hidden",
+              wordBreak: "normal",
+              verticalAlign: "top",
+              margin: 0,
+              padding: 0
+            }}
+          >
             <span
               style={{
-                fontFamily: "Helvetica,sans-serif",
+                fontFamily: `"Century Gothic", CenturyGothic, AppleGothic, sans-serif`,
                 color: "#959595",
-                fontSize: "12px"
+                fontSize: "12px",
+                wordBreak: "normal",
+                margin: 0,
+                padding: 0,
+                textAlign: "left"
               }}
             >
               {title}
             </span>
           </td>
         </tr>
-        <tr style={{ lineHeight: "15px" }}>
-          <td>&nbsp;</td>
-        </tr>
+
         <tr>
-          <td rowSpan="5" width="102px">
-            <a href="https://m8agency.com">
-              <img
-                alt="M8"
-                src="https://m8-gsa-vxhdb1nikcdy49t.stackpathdns.com/images/m8-iprospect-logo-email-signature.png"
-                width="91"
-                height="74"
-                style={{
-                  margin: 0
-                }}
-              />
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span
-              style={{
-                fontFamily: "Helvetica,sans-serif",
-                color: "#000000",
-                fontSize: "12px"
-              }}
-            >
-              {address}
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span
-              style={{
-                fontFamily: "Helvetica,sans-serif",
-                color: "#000000",
-                fontSize: "12px"
-              }}
-            >
-              o: 786-623-5500 {extension}
-              {mobilePhone}
-            </span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a
-              style={{
-                fontFamily: "Helvetica,sans-serif",
-                color: "#000000",
-                fontSize: "12px"
-              }}
-              href="https://m8agency.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.M8agency.com
-            </a>
+          <td
+            style={{
+              overflow: "hidden",
+              wordBreak: "normal",
+              verticalAlign: "top",
+              margin: 0,
+              padding: 0,
+              height: "10px"
+            }}
+          >
+            &nbsp;
           </td>
         </tr>
 
-        <tr style={{ lineHeight: "40px" }}>
-          <td>&nbsp;</td>
+        <tr>
+          <td
+            style={{
+              overflow: "hidden",
+              wordBreak: "normal",
+              verticalAlign: "top",
+              margin: 0,
+              padding: 0
+            }}
+          >
+            <table
+              id="m8-email-signature-mid-section"
+              style={{
+                border: "none",
+                padding: 0,
+                margin: 0,
+                verticalAlign: "top"
+              }}
+              cellSpacing="0"
+              cellPadding="0"
+              border="0"
+              align="left"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    valign="top"
+                    style={{
+                      overflow: "hidden",
+                      wordBreak: "normal",
+                      margin: 0,
+                      padding: 0,
+                      verticalAlign: "top"
+                    }}
+                  >
+                    <a href="https://m8agency.com">
+                      <img
+                        alt="M8"
+                        src="https://m8-gsa-vxhdb1nikcdy49t.stackpathdns.com/images/m8-iprospect-logo-email-signature.png"
+                        width="91"
+                        height="74"
+                        style={{
+                          margin: 0,
+                          padding: 0,
+                          position: "relative",
+                          left: "-1px"
+                        }}
+                      />
+                    </a>
+                  </td>
+
+                  <td valign="top" style={{ width: "20px" }}>
+                    &nbsp;
+                  </td>
+
+                  <td
+                    valign="top"
+                    style={{
+                      overflow: "hidden",
+                      wordBreak: "normal",
+                      verticalAlign: "top",
+                      margin: 0,
+                      padding: 0
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontFamily: `"Century Gothic", CenturyGothic, AppleGothic, sans-serif`,
+                        color: "#000000",
+                        fontSize: "12px",
+                        margin: 0,
+                        padding: 0,
+                        textAlign: "left"
+                      }}
+                    >
+                      {add1}
+                      {add2 !== "" && <br />}
+                      {add2}
+                    </span>
+
+                    <br />
+
+                    <span
+                      style={{
+                        fontFamily: `"Century Gothic", CenturyGothic, AppleGothic, sans-serif`,
+                        color: "#000000",
+                        fontSize: "12px"
+                      }}
+                    >
+                      o: 786-623-5500 {extension}
+                      {mobilePhone}
+                    </span>
+
+                    <br />
+
+                    <a
+                      style={{
+                        fontFamily: `"Century Gothic", CenturyGothic, AppleGothic, sans-serif`,
+                        color: "#000000",
+                        fontSize: "12px",
+                        textDecoration: "none",
+                        margin: 0,
+                        padding: 0
+                      }}
+                      href="https://m8agency.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      www.M8agency.com
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
         </tr>
 
         <tr>
-          <td colSpan="2">
-            <span
-              style={{
-                fontFamily: "Helvetica,sans-serif",
-                color: "#cccccc",
-                fontSize: "9px"
-              }}
-            >
-              Privileged/Confidential Information may be contained in this
-              message. If you are not the addressee indicated in this message
-              (or responsible for delivery of the message to such person), you
-              may not copy or deliver this message to anyone. In such case, you
-              should destroy this message and kindly notify the sender by reply
-              email. Please advise immediately if you or your employer does not
-              consent to email for messages of this kind. Opinions, conclusions
-              and other information in this message that do not relate to the
-              official business of M8 shall be understood as neither given nor
-              endorsed by it.
-            </span>
+          <td
+            style={{
+              overflow: "hidden",
+              wordBreak: "normal",
+              verticalAlign: "top",
+              margin: 0,
+              padding: 0,
+              height: "10px"
+            }}
+          >
+            &nbsp;
+          </td>
+        </tr>
+        <tr>
+          <td
+            style={{
+              fontFamily: `"Century Gothic", CenturyGothic, AppleGothic, sans-serif`,
+              color: "#cccccc",
+              fontSize: "9px",
+              margin: 0,
+              padding: 0,
+              textAlign: "left",
+              verticalAlign: "top"
+            }}
+          >
+            Privileged/Confidential Information may be contained in this
+            message. If you are not the addressee indicated in this message (or
+            responsible for delivery of the message to such person), you may not
+            copy or deliver this message to anyone. In such case, you should
+            destroy this message and kindly notify the sender by reply email.
+            Please advise immediately if you or your employer does not consent
+            to email for messages of this kind. Opinions, conclusions and other
+            information in this message that do not relate to the official
+            business of M8 shall be understood as neither given nor endorsed by
+            it.
           </td>
         </tr>
       </tbody>
