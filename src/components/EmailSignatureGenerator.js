@@ -12,7 +12,9 @@ const Form = ({
   error
 }) => {
   const submitCTA =
-    error === false ? "Signature copied!" : "Paste signature to clipboard!";
+    error === false
+      ? "Signature copied and ready for paste!"
+      : "Copy signature to clipboard!";
   const CTAstatus = error === false ? "copied" : "";
   return (
     <form onSubmit={onSubmit}>
