@@ -29,17 +29,6 @@ class Tools extends Component {
             </a>
             <span>Project Management</span>
           </li>
-
-          <li>
-            <a
-              href="http://hq.m8agency.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Workbook
-            </a>
-            <span>Time Tracking</span>
-          </li>
         </ul>
 
         <h2>Internal Tools</h2>
